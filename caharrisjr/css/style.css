@@ -1,0 +1,326 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+body a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+#showcase{
+    background: url('../img/galactic.jpg') no-repeat 50px;
+    padding-bottom: 300px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: antiquewhite;
+    border-bottom: black 1px solid;
+
+}
+#showcase .social-list1{
+    padding-top: 50px;
+    float: right;
+}
+#showcase h2{
+    text-transform: uppercase;
+}
+#showcase a{
+    color: antiquewhite;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.new{
+    font-size: 18px;
+    font-family:monospace;
+    text-align: left;
+    
+    position: relative;
+    animation-name: content;
+    animation-duration: 4s;
+}
+@keyframes content{
+    0%{left:-1000px;}
+    100%{left: 0;}
+}
+#showcase nav{
+    font-size: 30px;
+    float: right;
+}
+#showcase li{;
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+#intro{
+    letter-spacing: 8px;
+    margin-top: 200px;
+    font-size: 30px;
+    transition-duration: 10000ms;
+    transition-timing-function: ease-in;
+    animation: text 2s 1;
+}
+@keyframes text{
+    0%{
+        color: #2b3466;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: black 3px solid;
+    margin-top: 40px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.btn:hover{
+    transform: rotateX(180deg);
+    border-radius: 50%;
+}
+@keyframes btn{
+    0%{opacity:0}
+    100%{opacity: 1;}
+
+}
+#about{
+    
+    font-family: monospace;
+    background-color: white;
+    color: grey;
+    padding-bottom: 100px;
+}
+#about aside#sidebar{
+    float: right;
+    width: 60%;
+}
+#about img{
+    height: 400;
+    width: 400;
+    width: 30%;
+    padding-bottom: 30px;
+}
+#about h1{
+    font-size: 30px;
+    margin-top: 50px;
+}
+#about h2{
+    font-size: 30px;
+}
+#about p{
+    font-size: 20px;
+}
+#showcase .fix-me{
+    padding-top: 30px;
+    float: left;
+}
+
+#services h2{
+    font-size: 30px;
+    margin-top: 50px;
+}
+#services h3{
+    font-size: 18px;
+}
+#services {
+    background-color: rgb(248, 244, 240);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: monospace;
+    color: gray;
+    padding-bottom: 100px;
+}
+#boxes .bxes{
+    background-color: gray;
+    color: white;
+    margin-bottom: 15px;
+    float: left;
+    width: 35%;
+    font-size: 20px;
+    padding: 0 5px;
+    text-align: center;
+    margin-left: 100px;
+    /*padding: 10px;*/
+}
+#boxes .bxes h3{
+    color: black;
+    font-size: 25px;
+}
+#projects{
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+#projects h2{
+    font-family: monospace;
+    color: gray;
+    font-size: 30px;
+}
+#contact{
+    background-color: rgb(248, 244, 240);
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: monospace;
+    color: grey;
+}
+#contact h1{
+    font-size: 30px;
+    padding-top: 50px;
+}
+#contact .container{
+    width:30%;
+}
+#contact form{
+    background-color: transparent;
+    font-size: 30px;
+    
+}
+#contact input[type=text], input[type="email"]{
+    width: 400px;
+    height: 30px;
+    padding: 4px;
+}
+#contact textarea{
+    width: 400px;
+    height: 120px;
+    padding: 4px;
+}
+#contact .contacts-btn {
+    background-color: gray !important;
+    color: #ffffff !important;
+    width: 170px;
+    height: 54px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    border: 0px;
+}
+.footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: grey;
+    position: relative;
+    z-index: 1;
+}
+.footer a {
+    color: #fff;
+}
+
+.footer .footer-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media(max-width:1000px){
+	header #branding,#boxes .bxes{
+        float: none;
+        width: 95%;
+        text-align: center;
+    }
+    header li{
+        font-size: 1px;
+        display: block;
+    }
+    #newsletter h1, form{
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    #newsletter input[type="email"]{
+        padding: 4px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #email-us{
+        margin: 20px;
+        background: #2b3466;
+        text-align: center;
+        color: white;
+        padding: 4px;
+        width: 250px;
+    
+        
+    }
+    #contact .container{
+        width:65%;
+    }
+    #contact input[type=text], input[type="email"]{
+        width: 76%;
+        height: 30px;
+        padding: 4px;
+    }
+    #contact textarea{
+        width: 75%;
+        height: 120px;
+        padding: 4px;
+    }
+    #contact .contacts-btn {
+        background-color: gray !important;
+        color: #ffffff !important;
+        width: 40%;
+        height: 54px;
+        border-radius: 3px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        text-transform: capitalize;
+        border: 0px;
+    }
+    
+#boxes .bxes h3{
+    width: 92%;
+}
+
+#boxes .bxes p{
+    width: 92%;
+}
+    .button_1{
+        display: block;
+        height: 38px;
+
+        background: #2b3466;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    footer{
+        font-size: 12px;
+        
+    padding: none;
+    }
+    footer nav{
+        margin-top: 75px;
+        display: block;
+    }
+    .button_2{
+        height: 38px;
+    background: #2b3466;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+}

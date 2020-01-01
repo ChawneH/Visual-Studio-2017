@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    ""
+    ""
+    ""
+    ""
+    ""
+}
+.grid section:nth-child(even){
+    background-color: red;
+}
+
+.grid section:nth-child(odd){
+    background-color: blue;
+}
+.header{
+
+    background-color: green;
+    grid-area: header;
+}
+
+footer{
+
+    background-color: green;
+    grid-area: footer;
+}
+.showcase{
+    grid-area: showcase;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.content{
+    grid-area: content;
+}
