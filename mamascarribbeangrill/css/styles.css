@@ -29,8 +29,36 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+h1, h4 [data-scroll="in"]{
+    position: relative;
+    animation-name: fromleft;
+    animation-duration: 1s;
+}
+@keyframes fromleft{
+    0%{left:-1000px;}
+    100%{left: 0;}
+}
+h2, form [data-scroll="in"]{
+    position: relative;
+    animation-name: fromright;
+    animation-duration: 1s;
+}
+@keyframes fromright{
+    0%{right:-1000px;}
+    100%{right: 0;}
+}
+p, .header-p, img, .vid, .social-list2, .social-list, .menu-btn, .contacts-btn [data-scroll="in"]{
+    position: relative;
+    animation-name: fadein;
+    animation-duration: 2.5s;
+}
+@keyframes fadein{
+    0%{opacity: 0%;}
+    50%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
 #banner{
-    background: url(../img/carib.jpg) no-repeat center top;
+    background: url(../img/MamasNew.jpeg) no-repeat center top;
     background-size: cover;
     min-height: 630px;
 }
@@ -43,6 +71,10 @@ table {
     font-size: 55px;
     font: bold;
     color: rgb(10, 207, 10);
+    margin: 80px 0px 80px 0px;
+}
+#banner .social-list{
+    margin-bottom: 40px;
 }
 #banner h2{
     font-family: 'satisfy';
@@ -53,6 +85,27 @@ table {
     font-family: 'PT Sans', sans-serif;
     color: #fcfcfc;
     font-size: 34px;
+}
+.menu-btn, .menu-btn a {
+    background-color: green !important;
+    color: white !important;
+    width: 170px;
+    height: 54px;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 0px;
+    transition: 1s;
+}/*
+.menu-btn a{
+    text-decoration: none;
+}*/
+.menu-btn:hover, .contacts-btn:hover{
+    transform: scale(1.05);
 }
 .section-padding{
     padding: 60px 0px;
@@ -109,6 +162,27 @@ table {
     font-size: 16px;
 }
 #about .history{
+    float: left;
+}
+#media .social-list2{
+    font-size: 32px;
+    float: right;
+    width: 30%;
+    font-weight: normal;
+    color: gray;
+    margin: 0 5px;
+}
+#media{
+    background-color: rgba(221, 221, 221, 0.33);
+}
+#media .social-list2 a {
+    font-size: 32px;
+    font-weight: normal;
+    color: gray;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+.vid{
     float: left;
 }
 .msg-row {
@@ -210,7 +284,7 @@ table {
     font-weight: normal;
     text-transform: capitalize;
     border: 0px;
-    color: #000 !important;
+     transition: 1s;
 }
 
 .validation {
@@ -244,29 +318,10 @@ table {
 #sendmessage.show, #errormessage.show, .show {
     display:block;
 }
-
-.phone-in-talk, .hour-icon
-{
-    font-size: 35px;
-    line-height: 70px;
-    color: rgb(255, 255, 255);
-}
-
-
 .heading{
     font-family: monospace;
     color: rgb(246, 225, 36);
     font-size: 24px;
-}
-.marb-35{
-    margin-bottom: 35px;
-}
-.details-list{
-    margin-top: 20px;
-}
-.details-list ul li i {
-    margin-right: 10px;
-    color: #ffb03b;
 }
 #about{
     background-color: white;
@@ -277,124 +332,8 @@ table {
     border-radius: 2px;
     height: 400px
 }
-#event{
-    /*background: url('../img/res02.jpg') no-repeat;
-    */background-size: cover;
-}
-.left-images img {
-    height: 308px;
-    width: 100%;
-}
-.left-images{
-    padding: 0px;
-}
-.details-text {
-    border-right: 2px solid #841b2d;
-}
-.details-text {
-    background-color: rgba(14, 4, 4, 0.70);
-    border-right: 2px solid #A87F41;
-    padding: 20px 20px 30px 30px;
-    overflow: auto;
-}
-.content-holder h2 {
-    color: #FFB03B;
-    font-size: 32px;
-    padding-bottom: 15px;
-    font-family: 'Satisfy', sans-serif;
-}
-.content-holder address strong {
-    color: #FFB03B;
-    padding: 10px 0px;
-}
-.details-text p {
-    color: #E8E8E8;
-    line-height: 26px;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-.btn-read-more {
-    background: #FFB03B;
-    padding: 7px 19px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    line-height: 17px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    color: #000;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-.btn-read-more:hover
-{
-    color: #000;
-}
 #Container .mix{
     display: none;
-}
-#menu-list{
-    /*background: url('../img/mama\'s\ plant.jpg') no-repeat;
-    */background-size: cover;
-}
-.menu-restaurant{
-    width: 50%;
-    float: left;
-    padding: 15px;
-    position: relative;
-}
-.menu-restaurant .menu-title {
-    float: left;
-    font-family: Montserrat,arial;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #FFB03B;
-}
-.menu-restaurant .menu-line {
-    position: absolute;
-    bottom: 6px;
-    border-bottom: 1px dotted rgba(0,0,0,.3);
-    margin-left: .6rem;
-    margin-right: .6rem;
-}
-.menu-restaurant .menu-price {
-    font-weight: 600;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.menu-restaurant .menu-subtitle {
-    display: block;
-    float: left;
-    color: #B1B1B1;
-    font-family: Satisfy,'Open Sans',arial;
-    font-size: 1.2rem;
-}
-.menu-restaurant span.clearfix {
-    position: relative;
-    display: block;
-}
-
-#menu-flters ul li a.active, #menu-flters ul li a:hover {
-    background: #FFB03B;
-    color: #fff;
-    border: 1px solid #FFB03B;
-}
-#menu-flters ul li {
-    display: inline-block;
-    color: #fff;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
-}
-#menu-flters ul li a {
-    padding: 10px 20px;
-    font-size: 14px;
-    color: #565656;
-    border-radius: 0px;
-    border: 1px solid #BBBBBB;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .footer {
@@ -439,14 +378,14 @@ table {
 #contact{
     background-color: rgba(221, 221, 221, 0.33);
 }
-.footer .social-list a {
+.footer .social-list a, #banner .social-list a {
     font-size: 32px;
     font-weight: normal;
-    color: #fff;
+    color: #fff !important; 
     text-transform: uppercase;
     margin: 0 5px;
 }
-@media (min-width: 768px) and (max-width: 980px) {
+@media (min-width: 800px) {
     .content-holder h2 {
         font-size: 23px;
     }
@@ -454,16 +393,24 @@ table {
         line-height: 16.6px;
     }
 }
-@media (min-width: 451px) and (max-width: 767px) {
+@media (min-width: 451px) and (max-width: 800px) {
     .details-text {
         border:0px;
         border-bottom: 2px solid #A87F41;
     }
 }
-@media (min-width: 20px) and (max-width: 450px) {
+@media (max-width: 800px) {
     .menu-restaurant {
     width: 100%;
     }
+    .vid{
+        width: 100%;
+    }
+    #media .social-list2{
+    
+    width: 100%
+}
+
     .details-text {
         border:0px;
         border-bottom: 2px solid #A87F41;

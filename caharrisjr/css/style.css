@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+* {
+    font-family: 'Handlee';
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
 body{
-    margin: 0;
+    margin: auto;
 }
 body a{
     text-decoration: none;
@@ -13,47 +20,51 @@ body a{
     margin: auto;
     overflow: hidden;
 }
-#showcase{
-    background: url('../img/galactic.jpg') no-repeat 50px;
-    padding-bottom: 300px;
+#showcaseA{
+    background-color: blueviolet;
+    padding-bottom: 20px;
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: antiquewhite;
-    border-bottom: black 1px solid;
+    color: white;
+   
 
 }
-#showcase .social-list1{
-    padding-top: 50px;
+#showcase{
+    background: url('../img/galactic.jpg') no-repeat 50px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+   
+
+}
+nav .social-list1{
+    font-size: 30px;
+    margin-top: 45px;
+    letter-spacing: 10px;
     float: right;
 }
+
 #showcase h2{
     text-transform: uppercase;
+    font-size:  65px;
 }
-#showcase a{
-    color: antiquewhite;
+#showcase a, #showcaseA a{
+    color: #fffafa;
     font-size: 20px;
     transition: 0.5s;
 }
-
-.new{
-    font-size: 18px;
-    font-family:monospace;
-    text-align: left;
+#showcase a:hover, #showcaseA a:hover{
+    color: grey;
     
-    position: relative;
-    animation-name: content;
-    animation-duration: 4s;
 }
-@keyframes content{
-    0%{left:-1000px;}
-    100%{left: 0;}
+nav li{
+    margin-top: 45px;
+    float: left;
 }
-#showcase nav{
-    font-size: 30px;
-    float: right;
-}
-#showcase li{;
+#showcase li, #showcaseA li{;
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
@@ -61,142 +72,111 @@ body a{
 #intro{
     letter-spacing: 8px;
     margin-top: 200px;
-    font-size: 30px;
-    transition-duration: 10000ms;
-    transition-timing-function: ease-in;
-    animation: text 2s 1;
-}
-@keyframes text{
-    0%{
-        color: #2b3466;
-        margin-bottom: -40px;
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
+    font-size: 40px;
 }
 .btn{
     display: inline-block;
     text-decoration: none;
     padding: 1rem 2rem;
-    border: black 3px solid;
+    border: black 2px solid;
+    border-radius: 7%;
     margin-top: 40px;
-    opacity: 0;
-    animation-name: btn;
-    animation-duration: 1;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-
     transition-property: transform;
     transition-duration: 1s;
 }
 .btn:hover{
-    transform: rotateX(180deg);
-    border-radius: 50%;
-}
-@keyframes btn{
-    0%{opacity:0}
-    100%{opacity: 1;}
-
+    transform: scale(1.05);
+   
 }
 #about{
-    
-    font-family: monospace;
-    background-color: white;
-    color: grey;
+    background-color: white; /*rgba(221, 221, 221, 0.33)*/
+    color: black;
     padding-bottom: 100px;
+    
 }
 #about aside#sidebar{
     float: right;
-    width: 60%;
+    width: 55%;
+    margin-top: 100px;
+    
 }
 #about img{
-    height: 400;
-    width: 400;
-    width: 30%;
-    padding-bottom: 30px;
-}
-#about h1{
-    font-size: 30px;
-    margin-top: 50px;
-}
-#about h2{
-    font-size: 30px;
+    margin-top: 100px;
+    width: 40%;
+    
 }
 #about p{
-    font-size: 20px;
+    font-size: 28px;
 }
 #showcase .fix-me{
     padding-top: 30px;
-    float: left;
 }
-
 #services h2{
     font-size: 30px;
     margin-top: 50px;
 }
 #services h3{
-    font-size: 18px;
+    font-size: 22px;
 }
 #services {
-    background-color: rgb(248, 244, 240);
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(221, 221, 221, 0.33);
     text-align: center;
-    font-family: monospace;
-    color: gray;
+    color: black;
     padding-bottom: 100px;
 }
 #boxes .bxes{
-    background-color: gray;
-    color: white;
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
     margin-bottom: 15px;
-    float: left;
-    width: 35%;
+    width: 80%;
     font-size: 20px;
     padding: 0 5px;
-    text-align: center;
+    text-align: left;
     margin-left: 100px;
-    /*padding: 10px;*/
+    
 }
 #boxes .bxes h3{
     color: black;
+    border-bottom: 2px black solid;
+    background-size: 40px;
     font-size: 25px;
 }
 #projects{
     background-color: white;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     padding-top: 50px;
     text-align: center;
 }
 #projects h2{
-    font-family: monospace;
-    color: gray;
+    color: black;
     font-size: 30px;
 }
 #contact{
-    background-color: rgb(248, 244, 240);
+    background-color: rgba(221, 221, 221, 0.33);
+    padding-top: 50px;
     padding-bottom: 100px;
     text-align: center;
-    font-family: monospace;
-    color: grey;
+    color: black;
 }
 #contact h1{
     font-size: 30px;
-    padding-top: 50px;
-}
-#contact .container{
-    width:30%;
 }
 #contact form{
     background-color: transparent;
     font-size: 30px;
     
+}
+#contact .container{
+    width:30%;
+}
+.footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 #contact input[type=text], input[type="email"]{
     width: 400px;
@@ -214,102 +194,25 @@ body a{
     width: 170px;
     height: 54px;
     border-radius: 3px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    text-transform: capitalize;
+    font-size: 20px;
+    text-transform: uppercase;
     border: 0px;
 }
-.footer {
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    color: grey;
-    position: relative;
-    z-index: 1;
-}
 .footer a {
-    color: #fff;
+    color: #fffafa;
 }
 
 .footer .footer-top {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-@media(max-width:1000px){
-	header #branding,#boxes .bxes{
-        float: none;
-        width: 95%;
-        text-align: center;
-    }
-    header li{
-        font-size: 1px;
-        display: block;
-    }
-    #newsletter h1, form{
-        float: none;
-        width: 100%;
-        display: block;
-    }
-    #newsletter input[type="email"]{
-        padding: 4px;
-        margin-top: 10px;
-        width: 100%;
-    }
-    #email-us{
-        margin: 20px;
-        background: #2b3466;
-        text-align: center;
-        color: white;
-        padding: 4px;
-        width: 250px;
+@media(max-width: 780px){
     
-        
-    }
     #contact .container{
         width:65%;
     }
-    #contact input[type=text], input[type="email"]{
-        width: 76%;
-        height: 30px;
-        padding: 4px;
-    }
-    #contact textarea{
-        width: 75%;
-        height: 120px;
-        padding: 4px;
-    }
-    #contact .contacts-btn {
-        background-color: gray !important;
-        color: #ffffff !important;
-        width: 40%;
-        height: 54px;
-        border-radius: 3px;
-        font-size: 16px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: normal;
-        text-transform: capitalize;
-        border: 0px;
-    }
-    
-#boxes .bxes h3{
-    width: 92%;
-}
-
-#boxes .bxes p{
-    width: 92%;
-}
-    .button_1{
-        display: block;
-        height: 38px;
-
-        background: #2b3466;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
-    }
     footer{
-        font-size: 12px;
+        font-size: 18px;
         
     padding: none;
     }
@@ -317,10 +220,62 @@ body a{
         margin-top: 75px;
         display: block;
     }
-    .button_2{
-        height: 38px;
-    background: #2b3466;
-    padding-left: 20px;
-    padding-right: 20px;
+    
+}
+
+/****Responsive Navbar*****/
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 800px) {
+    
+
+    .toggle-button {
+        margin-top: 45px;
+        display: flex;
     }
 }
+/*****Grid CSS*****/
+.grid-container{
+    display: grid;
+    grid-template: 
+   "project1 project1 project2 project2" 
+   "project3 project3 project4 project4" 
+}
+.grid-item{
+    transition: 0.5s;
+    padding: 2px;
+}
+.grid-item:hover{
+    
+    transform: scale(1.02);
+}
+ .item-1{
+     
+     grid-area: project1;
+
+}
+.item-2{
+    grid-area: project2;
+
+}
+.item-3{
+    grid-area: project3;
+}
+.item-4{
+    grid-area: project4;
+}
+

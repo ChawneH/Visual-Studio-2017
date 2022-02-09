@@ -2,19 +2,43 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174645228-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-174645228-1');
+  </script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhpEVJPJdK2KF3I8snN2Sd_4iDPvQ1Aas&callback=initMap"
+  type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/google-places.js "></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=&#91;AIzaSyDhpEVJPJdK2KF3I8snN2Sd_4iDPvQ1Aas&#93;"></script>
+  <script>
+    jQuery(document).ready(function () {
+      $("#google-reviews").googlePlaces({
+        placeId: '[PLACES_ID]',
+        render: ['reviews'],
+        min_rating: 5,
+        max_rows: 0
+      });
+    });
+  </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="MCG Webpage">
-    <meta name="keywords" content="width=device-width">
-    <meta name="author" content="Chawne Harris">
+    <meta name="keywords" content="caribbean food, jamaican food, jamaican food near me, jamaican restaurant near me, caribbean food">
+    <meta name="description" content="Mama’s Caribbean Grill in Decatur, GA has the BEST Authentic Caribbean & Jamaican Food prepared with society’s health and nutrition in mind. Our employees are valued and are held to standards of excellence when preparing and serving osur cutomers.">
 
-    <title>Mama's Carribbean Grill | Welcome</title>
+    <title>Best Caribbean Food Near You | Mama's Carribbean Grill GA</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="shortcut icon" href="./img/icon.jpg">
-
+ 
 </head>
 
 <body>
@@ -26,10 +50,10 @@
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#about">About</a>
-            <a href="#menu-list">Menu</a>
+            <a href="#menu">Menu</a>
             <a href="#contact">Contact</a>
             <div class="social-list">
-              <a href="https://www.facebook.com/mamascaribbeanbarandgrill/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/Mamas-Caribbean-Grill-114285127025588/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <!--<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
               <a href="https://www.instagram.com/mamascaribbeanga/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
@@ -41,9 +65,16 @@
         <div class="row">
           <div class="inner text-center">
             <h1 class="logo-name">MAMA'S CARIBBEAN GRILL</h1>
-            <h3>GA</h3>
+            <h3></h3>
             <h2>GREAT FOOD, GREAT VIBES.</h2>
-           <!--<p>117 N State Rd 7, Plantation FL, 33317<BR>954-530-5185</p>-->
+            <button type="submit" class="submit menu-btn"><a href="#menu">VIEW  MENU</a></button>
+          <div class="social-list">
+          
+            <a href="https://www.facebook.com/Mamas-Caribbean-Grill-114285127025588/"><i class="fa fa-facebook"
+                aria-hidden="true"></i></a>
+            <!--<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
+            <a href="https://www.instagram.com/mamascaribbeanga/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
           </div>
         </div>
       </div>
@@ -55,8 +86,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Mama's Caribbean Grill GA</h1>
-          <p class="header-p">The number one spot for Carribean & Island Seafood Specialty dishes
+          <h1 class="header-h">Mama's Caribbean Grill</h1>
+          <p class="header-p">The Best Spot For Carribean & Jamaican Food dishes
             <br> </p>
         </div>
         <div class="col-md-1"></div>
@@ -64,15 +95,15 @@
           <div class="col-md-6 col-sm-6">
             <div class="about-info">
               <h2 class="heading">Mission</h2>
-              <p>Mama’s Caribbean Grill is a restaurant founded to serve Authentic Jamaican Cuisine prepared with society’s health and nutrition in mind. 
-                Our employees are valued and are held to standards of excellence when preparing and serving osur cutomers.</p>
+              <p>Mama’s Caribbean Grill is a restaurant founded to serve Authentic Jamaican Food prepared with society’s health and nutrition in mind. 
+                Our employees are valued and are held to standards of excellence when preparing and serving our cutomers.</p>
                 <h2 class="heading">Atmosphere in The Workplace</h2>
                   <p>Mama’s Caribbean thrives when there is a healthy work environment. All employees will have respect for each other, communicate with cordiality and understand the concept of hard work paying off.  We want our employees to WANT to come to work.</p>
                    
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <img src="img/store.jpg" width="450px" alt="" class="img-responsive">
+            <img src="img/store.jpg" width="450px" alt="Mama's Caribbean Grill Store" class="img-responsive">
           </div>
           <div class="history">
           <h2 class="heading">History Behind the Craft</h2>
@@ -81,18 +112,42 @@
             </p>
             </div>
         </div>
-        <div class="col-md-1"></div>
       </div>
+      <button type="submit" class="submit menu-btn"><a href="#menu">VIEW MENU</a></button>
     </div>
+
   </section>
   <!--/about-->
-  <!-- menu --
-  <section id="menu-list" class="section-padding">
+  <!-- media-->
+  <section id="media" class="section-padding">
+    <div class="container">
+      <h1 class="header-h">See What We're Up To!</h1>
+        <video class="vid" controls width="68%" >
+          <source src="./img/MAMA'S CARIBBEAN GRILL ATL_720p.mp4" type="video/mp4">
+        </video>
+<div class="social-list2">
+  <p>Follow Us On Our Social Media! <br></p>
+  <a href="https://www.facebook.com/Mamas-Caribbean-Grill-114285127025588/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <!--<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
+  <a href="https://www.instagram.com/mamascaribbeanga/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+      
+      
+    </div>
+  </section>
+  <!--/media-->
+  <!--Reviews-->
+  <section id="reviews">
+    <div id="google-reviews"></div>
+  </section>
+  <!--/Reviews-->
+  <!-- menu -->
+  <section id="menu" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Menu List</h1>
-          <p class="header-p">All of our delicious dinner and lunch entrees are</p>
+          <h1 class="header-h">Our Menu</h1>
+          <img src="./img/Mama's-Caribbean-Grill-Menu.jpg" alt="Caribbean Food Menu" width="80%">
         </div>
     </div>
     </div>
@@ -114,8 +169,7 @@
         
             <div class="media-body">
                 <h4 class="dark-blue regular">Find Us! </h4>
-                <p class="light-blue regular alt-p"><address>4919 Flat Shoals Parkway <br>Decatur, GA 30034<br>Suite 122</address>
-                </p>
+                <p class="light-blue regular alt-p">4919 Flat Shoals Parkway <br>Decatur, GA 30034<br>Suite 122</p>
               <h4 class="dark-blue regular">Call Us! </h4>
               <p class="light-blue regular alt-p">770-696-5588 <span class="contacts-sp"> </span></p>
             </div>
@@ -182,10 +236,10 @@
         <div class="col-md-offset-3 col-md-6 text-center">
           <div class="widget">
             <h4 class="widget-title">Mama's Caribbean Grill GA</h4>
-            <address>4919 Flat Shoals Parkway <br>Decatur, GA 30034<br>Suite 122<br>770-696-5588</address>
+            <p>4919 Flat Shoals Parkway <br>Decatur, GA 30034<br>Suite 122<br>770-696-5588</p>
             <div class="social-list">
 
-                <a href="https://www.facebook.com/mamascaribbeanbarandgrill/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/Mamas-Caribbean-Grill-114285127025588/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <!--<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
                 <a href="https://www.instagram.com/mamascaribbeanga/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
@@ -208,6 +262,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+  <script src="js/maps.js"></script>
 
 </body>
 

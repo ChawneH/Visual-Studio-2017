@@ -2,8 +2,8 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-height: 565px;
-  max-width: 1200px;
+    width: 80%;
+    height: auto;
   margin: auto;
   border: #717171 .5px;
 }
@@ -19,9 +19,9 @@
   position: relative;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 22px;
   padding: 16px;
-  color: white;
+  color: #fffafa;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
